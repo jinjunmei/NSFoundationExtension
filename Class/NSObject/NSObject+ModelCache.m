@@ -11,16 +11,7 @@
 
 @implementation NSObject (ModelCache)
 
-- (void)saveToCache:(Class)class {
-    
-    NSAssert([self conformsToProtocol:@protocol(NSCoding)], @"Only works for NSCoding");
-    NSUserDefaults *userDefulat = [NSObject objectCacheModelDefault];
-    NSString *modelKey = NSStringFromClass(class);
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
-    [userDefulat setObject:data forKey:modelKey];
-}
-
-+ (void)saveToCache:(NSObject<NSCopying> *)model {
++ (void)saveToCache:(NSObject<NSCoding> *)model {
     NSAssert([model conformsToProtocol:@protocol(NSCoding)], @"Only works for NSCoding");
     NSUserDefaults *userDefulat = [NSObject objectCacheModelDefault];
     NSString *modelKey = NSStringFromClass([model class]);

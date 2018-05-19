@@ -14,7 +14,7 @@
  将当前对象，保存到缓存中
  @parameter model  保存到缓存中的model
  */
-+ (void)saveToCache:(NSObject<NSCopying> *)model;
++ (void)saveToCache:(NSObject<NSCoding> *)model;
 
 /**
  从缓存中读取出独享model
