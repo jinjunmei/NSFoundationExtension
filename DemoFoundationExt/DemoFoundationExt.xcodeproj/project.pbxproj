@@ -16,6 +16,7 @@
 		16C1E7C22054F40500B5B32B /* DemoFoundationExtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C1E7C12054F40500B5B32B /* DemoFoundationExtTests.m */; };
 		16C1E7CD2054F40600B5B32B /* DemoFoundationExtUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C1E7CC2054F40600B5B32B /* DemoFoundationExtUITests.m */; };
 		941077CF010C66311A909986 /* libPods-DemoFoundationExt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B72F8B3E253FE2CAA223439 /* libPods-DemoFoundationExt.a */; };
+		CC31A71320B048EA00A101C1 /* NSObject+ModelCacheTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CC31A71220B048E900A101C1 /* NSObject+ModelCacheTestCase.m */; };
 		CE69FF1B55C535CDF71943E7 /* libPods-DemoFoundationExtUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F49A1AD268C2E40FE0619E /* libPods-DemoFoundationExtUITests.a */; };
 		D2D5597791627281A6E077D3 /* libPods-DemoFoundationExtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD925A7EE2717399432330B /* libPods-DemoFoundationExtTests.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		813C037EA1ECE6283211A591 /* Pods-DemoFoundationExtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoFoundationExtTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoFoundationExtTests/Pods-DemoFoundationExtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9F49A1AD268C2E40FE0619E /* libPods-DemoFoundationExtUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoFoundationExtUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD925A7EE2717399432330B /* libPods-DemoFoundationExtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoFoundationExtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC31A71220B048E900A101C1 /* NSObject+ModelCacheTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ModelCacheTestCase.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		16C1E7C02054F40500B5B32B /* DemoFoundationExtTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC31A71120B048B400A101C1 /* NSObject */,
 				16C1E7C12054F40500B5B32B /* DemoFoundationExtTests.m */,
 				16C1E7C32054F40500B5B32B /* Info.plist */,
 			);
@@ -170,6 +173,14 @@
 				A9F49A1AD268C2E40FE0619E /* libPods-DemoFoundationExtUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC31A71120B048B400A101C1 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				CC31A71220B048E900A101C1 /* NSObject+ModelCacheTestCase.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC31A71320B048EA00A101C1 /* NSObject+ModelCacheTestCase.m in Sources */,
 				16C1E7C22054F40500B5B32B /* DemoFoundationExtTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

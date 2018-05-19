@@ -11,7 +11,7 @@
 
 - (BOOL)isChinaMobile;
 
-- (BOOL) isValidAlphaNumberPassword；
+- (BOOL) isValidAlphaNumberPassword;
 
 - (BOOL) isValidEmail;
 

@@ -30,9 +30,9 @@ xcuserdata/
 
 #CocoaPods
 Pods
-*.DS_Store
+.DS_Store
 !Podfile
-!Podfile.lock
+Podfile.lock
 
 # CocoaPods
 #

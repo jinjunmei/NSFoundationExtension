@@ -1,19 +1,19 @@
 //
-//  DemoFoundationExtTests.m
+//  NSObject+ModelCacheTestCase.m
 //  DemoFoundationExtTests
 //
-//  Created by 顾吉涛 on 2018/3/11.
+//  Created by gus on 2018/5/19.
 //  Copyright © 2018年 顾吉涛. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import <NSObject+ModelCache.h>
 
-@interface DemoFoundationExtTests : XCTestCase
+@interface NSObject_ModelCacheTestCase : XCTestCase
 
 @end
 
-@implementation DemoFoundationExtTests
+@implementation NSObject_ModelCacheTestCase
 
 - (void)setUp {
     [super setUp];
@@ -37,6 +37,10 @@
     }];
 }
 
-
-
+- (void)testObjectCacheModel {
+    NSString *sample = @"Test ObjectModel";
+    [NSString saveToCache:sample];
+    NSString *cache = (NSString *)[NSString modelFromCache];
+    XCTAssert([sample isEqualToString:cache]);
+}
 @end
