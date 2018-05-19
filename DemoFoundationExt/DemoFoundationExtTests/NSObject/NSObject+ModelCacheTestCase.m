@@ -43,4 +43,5 @@
     NSString *cache = (NSString *)[NSString modelFromCache];
     XCTAssert([sample isEqualToString:cache]);
 }
+
 @end
